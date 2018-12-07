@@ -1,11 +1,11 @@
-[![CircleCI](https://circleci.com/gh/andela-oakinseye/g-mailer.svg?style=svg)](https://circleci.com/gh/andela-oakinseye/g-mailer)
-# g-mailer
+[![CircleCI](https://circleci.com/gh/andela-oakinseye/node-gmailer.svg?style=svg)](https://circleci.com/gh/andela-oakinseye/node-gmailer)
+# node-gmailer
 Sending of emails from your nodejs app using your gmail account.
 
 ### How to Use
 #### Installation
 ```
-npm install g-mailer
+npm install node-gmailer
 ```
 
 #### Config Setup
@@ -30,21 +30,21 @@ Import the package into your app
 
 **Using ES5**
 ```js
-var gmail = require('g-mailer');
+var gmail = require('node-gmailer');
 ```
 
 **With ES Modules**
 ```js
-import gmail from 'g-mailer';
+import gmail from 'node-gmailer';
 ```
 
 **Sending example [Single Recipient]**
 ```js
 const recipient = 'brainyfarm@gmail.com';
 const messageData = {
-  subject: 'Olawale from g-mailer',
-  text: 'Hello, this is a single recipient message from g-mailer',
-  html: '<strong> Hello </strong>, this is a single recipient message from <em>g-mailer</em>'
+  subject: 'Olawale from node-gmailer',
+  text: 'Hello, this is a single recipient message from node-gmailer',
+  html: '<strong> Hello </strong>, this is a single recipient message from <em>node-gmailer</em>'
 }
 
 gmail.send(recipient, messageData)
@@ -58,11 +58,11 @@ gmail.send(recipient, messageData)
 
 **Sending example [Multiple Recipients] with HTML support**
 ```js
-const recipients = ['brainyfarm@gmail.com', 'g-mailer@dispostable.com'];
+const recipients = ['brainyfarm@gmail.com', 'node-gmailer@dispostable.com'];
 const messageData = {
-  subject: 'Olawale from g-mailer',
-  text: 'Hello, this is a single recipient message from g-mailer',
-  html: '<strong> Hello </strong>, this is a single recipient message from <em>g-mailer</em>'
+  subject: 'Olawale from node-gmailer',
+  text: 'Hello, this is a single recipient message from node-gmailer',
+  html: '<strong> Hello </strong>, this is a single recipient message from <em>node-gmailer</em>'
 }
 
 gmail.send(recipients, messageData)
@@ -76,10 +76,10 @@ gmail.send(recipients, messageData)
 #### Coming soon
 - Email Template Support: *Generate HTML emails with support for custom values*
 - Queue messages to be sent at a particular time or date
-- [Suggest a feature or improvements](https://github.com/andela-oakinseye/g-mailer/issues)
+- [Suggest a feature or improvements](https://github.com/andela-oakinseye/node-gmailer/issues)
 
 #### Get Involved
-- [Report a bug](https://github.com/andela-oakinseye/g-mailer/issues)
+- [Report a bug](https://github.com/andela-oakinseye/node-gmailer/issues)
 - Star the repo, fork and contribute.
 
 #### Note
