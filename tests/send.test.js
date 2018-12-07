@@ -1,3 +1,4 @@
+const skipIf = require('skip-if');
 const gmail = require('../');
 
 test('import should be an object', () => {
@@ -12,7 +13,7 @@ test('import.send should be of type function', () => {
   expect(typeof gmail.send).toBe('function');
 });
 
-test('import.send should successfully send a mail to a single recipient', async (done) => {
+skipIf(!process.env.GMAIL_APP_PASSWORD, 'import.send should successfully send a mail to a single recipient', async (done) => {
   const recipient = 'gmailer@dispostable.com';
   const messageData = { 
     subject: 'G-Mailer Single Recipient Test',
@@ -29,7 +30,7 @@ test('import.send should successfully send a mail to a single recipient', async 
 }, 40000);
 
 
-test('import.send should successfully send a mail to multiple recipients', async (done) => {
+skipIf(!process.env.GMAIL_APP_PASSWORD, 'import.send should successfully send a mail to multiple recipients', async (done) => {
   const recipients = ['gmailer@dispostable.com', 'gmailer2@dispostable.com', 'brainyfarm@gmail.com'];
   const messageData = { 
     subject: 'G-Mailer Multi Recipient Test',
