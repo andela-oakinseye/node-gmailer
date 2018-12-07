@@ -5,7 +5,6 @@ var transporter = nodemailer.createTransport(config.transport);
 
 function send(recipients, messageData) {
   var to = Array.isArray(recipients) ? recipients.join(', ') : recipients;
-  console.log(to);
   var options = {
     from: config.sender,
     to: to,
