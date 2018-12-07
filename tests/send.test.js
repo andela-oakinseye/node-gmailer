@@ -37,7 +37,7 @@ skipIf(!process.env.GMAIL_APP_PASSWORD, 'import.send should successfully send a 
     text: 'This is an automated test message, multi recipients ok',
     html: `<strong> Hello,</strong> <br /> <br />
       This is an automated test Message from the <strong> node-gmailer package </strong>, multi recipients ok
-      `
+    `
   };
 
   const response = await gmail.send(recipients, messageData);
