@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/andela-oakinseye/g-mailer.svg?style=svg)](https://circleci.com/gh/andela-oakinseye/g-mailer)
 # g-mailer
 Sending of emails from your nodejs app using your gmail account.
 
