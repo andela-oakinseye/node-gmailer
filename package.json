@@ -1,0 +1,31 @@
+{
+  "name": "g-mailer",
+  "version": "1.0.0",
+  "description": "An npm package to enable quick sending of messages using gmail",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-oakinseye/g-mailer.git"
+  },
+  "keywords": [],
+  "author": "Olawale Akinseye <brainyfarm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andela-oakinseye/g-mailer/issues"
+  },
+  "homepage": "https://github.com/andela-oakinseye/g-mailer#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "nodemailer": "^4.7.0"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "skip-if": "^1.1.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
