@@ -14,10 +14,10 @@ test('import.send should be of type function', () => {
 });
 
 skipIf(!process.env.GMAIL_APP_PASSWORD, 'import.send should successfully send a mail to a single recipient', async (done) => {
-  const recipient = 'gmailer@dispostable.com';
+  const recipient = 'node-gmailer@dispostable.com';
   const messageData = { 
-    subject: 'G-Mailer Single Recipient Test',
-    text: 'This is an automated Test Message from the module, single recipient ok'
+    subject: 'Node-Gmailer Single Recipient Test',
+    text: 'This is an automated test message, single recipient ok'
   };
 
   const response = await gmail.send(recipient, messageData);
@@ -31,12 +31,12 @@ skipIf(!process.env.GMAIL_APP_PASSWORD, 'import.send should successfully send a 
 
 
 skipIf(!process.env.GMAIL_APP_PASSWORD, 'import.send should successfully send a mail to multiple recipients', async (done) => {
-  const recipients = ['gmailer@dispostable.com', 'gmailer2@dispostable.com', 'brainyfarm@gmail.com'];
+  const recipients = ['node-gmailer@dispostable.com', 'node-gmailer2@dispostable.com', 'brainyfarm@gmail.com'];
   const messageData = { 
-    subject: 'G-Mailer Multi Recipient Test',
-    text: 'This is an automated test Message from the g-mailer package, multi recipients ok',
+    subject: 'Node-Gmailer Multi Recipient Test',
+    text: 'This is an automated test message, multi recipients ok',
     html: `<strong> Hello,</strong> <br /> <br />
-      This is an automated test Message from the <strong> g-mailer package </strong>, multi recipients ok
+      This is an automated test Message from the <strong> node-gmailer package </strong>, multi recipients ok
       `
   };
 
